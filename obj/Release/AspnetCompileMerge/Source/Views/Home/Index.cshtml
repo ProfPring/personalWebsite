@@ -1,0 +1,380 @@
+﻿@model WebApplication1.Models.EmailFormModelcs
+
+<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Sams website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/Scripts/JavaScript.js"></script>
+    <Link rel="stylesheet" type="text/css" href="/Content/Site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div id="navbar" class="sidebar">
+        <span id="navbar-btn" style="cursor: pointer;" class="fas fa-bars navbar-btn"></span>
+
+        <div id="openclose" class="Closed">
+            <span class="HomeClosed">
+                <a href=""><img src="@Url.Content("~/Content/home1.png") " style="height: 50px; width: 50px;" /></a>
+            </span>
+            <span class="BlogClosed">
+                <a href="#BlogSec"><img src=@Url.Content("~/Content/Icons_blog.png") style="height: 50px; width:  50px;" /></a>
+            </span>
+            <span class="CVClosed">
+                <a href="#CVSec"><img src=@Url.Content("~/Content/Icons_CV.png") style="height: 50px; width:  50px;" /></a>
+            </span>
+            <span class="ArtClosed">
+                <a href="#ArtSec"><img src=@Url.Content("~/Content/Icons_art.png") style="height: 50px; width:  50px;" /></a>
+            </span>
+            <span class="ContactClosed">
+
+
+                <a href="#ContactmeSecontion"><img src="@Url.Content("~/Content/Icons_Contact.png")" style="height: 50px; width:  50px;" /></a>
+            </span>
+        </div>
+
+        <a id="closeB" class="closebtn-closed fas fa-times"></a>
+        <ul class="block" id="navigation" style="list-style: none;">
+            <li class="currentpage"><a href="" style="cursor: pointer;">Home</a></li>
+            <li class="BlogPage"> <a href="#BlogSec" style="cursor: pointer;" title="Blog">Blog</a></li>
+            <li class="CVCPage"><a href="#CVSec" style="cursor: pointer;" title="CV">CV</a></li>
+            <li><a href="#ArtSec" style="">ART</a></li>
+            <li><a href="#ContactmeSecontion" style="">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="top" class="body main right">
+        <div class="col-lg-12">
+
+
+            <div class="NameText">
+                <p id="p1">Sam_Robinson</p>
+            </div>
+            <div class="textBlockTwo display-3">
+                <p> Portfolio | Blog </p>
+            </div>
+
+            <div id="LapTop">
+                <i class="fas fa-laptop-code fa-10x" style="color: white;"></i>
+            </div>
+            <div id="server">
+                <i class="fas fa-server fa-10x" style="color: white;"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="BlogSec" class="Blog right">
+        <h1 class="mb-5 display-4 BlogTittle text-justify" style="color: #2e5464; display: block">BLOG</h1>
+        <div class="BlogContent">
+            <div>
+                <h3 class="BlogText text-justify" style="color: #2e5464; left:4%; font-weight: 500">Sam Robinson</h3>
+                <p style=" color: #2e5464; position: absolute; display: inline; font-size:0.9vw; top: 8%;
+                       left:  -2%; ">
+
+                    I have a confident and friendly personality;
+                    I am good at forming relationships with new people.
+                    I take an energetic and positive approach to all areas of my personal
+                    and academic life.
+                    I enjoy a challenge and take pride in ensuring that
+                    a job is done well, to the highest
+                    standard. I am a good timekeeper, flexible, reliable and hard working
+
+                    I particularly like busy environments, which rely on team working,
+                    personal resilience and problem solving.
+                    I have also been told I am trustworthy and polite,
+                    I look to achieve the best I can in all areas of my work,
+                    and I love learning new abilities and growing as not only as a professional
+                    but as a person.
+
+                    I really enjoying leaning new concepts and ideas in physics and programming and
+                    taking time to understand new ideas all while keeping an
+                    open mind because it excites me
+                    and makes me happy to see science happening in the real world not just in the lab.
+                    I enjoy un-winding playing video games both online and offline,
+                    and I love to social side of gaming.
+                    I enjoy camping on going on walks with friends traveling and seeing new places,
+                    I like to experience the natural world for all its beauty.
+
+
+                </p>
+
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+
+
+
+                    var i = 0;
+                    var images = [];
+                    var time = 3000;
+
+                    // Image List
+                    images[0] = 'park.JPG';
+                    images[1] = 'londonstreet.JPG';
+                    images[2] = 'treesSky.JPG';
+
+
+
+                    function changeimg() {
+
+                        var slide = document.getElementById("slide").src = "@Url.Content("~/Content/treesSky.JPG")";
+
+
+                        if (i < images.length - 1) {
+                            i++;
+                        } else {
+                            i = 0;
+                        }
+                        setTimeout(changeimg, time);
+                    }
+                    window.onload = changeimg();
+                });
+
+
+
+            </script>
+
+            <span class="">
+                <a><img id="slide" name="slide" class="rollover" /></a>
+            </span>
+
+
+
+
+
+        </div>
+    </section>
+    <section id="CVSec" class="CV right">
+        <h1 class="mb-5 display-4 CVTittle  text-justify" style="color: #2e5464;">CV</h1>
+
+        <span class="fab fa-linkedin" style=" font-size: 400%; position: absolute; display: inline; top: 2%;
+              left: 81%; color: white;  cursor: pointer;">
+
+        </span>
+        <span type="button" onclick="location.href='@Url.Action("getCVFromServer", "Home")'" id="downloadbutton" class="fas fa-cloud-download-alt" style=" font-size: 400%; position: absolute; display: inline; top: 2%;
+              left: 86%; color: white;  cursor: pointer;">
+
+        </span>
+        <span id="githubBttn" class="fab fa-github " style=" font-size: 400%; position: absolute; display: inline; top: 2%;
+              left: 76%; color: white;  cursor: pointer;">
+        </span>
+
+
+        <div class="row BlogContent" style="left: 20.8%">
+            <div>
+                <h2 style="font-weight: bold;  position: absolute; display: inline; font-size: 20px; top: -5%;
+                        left: -5%;
+                        font-size:0.8vw;
+                        color: #2e5464;
+                        white-space: pre-wrap;">
+
+                    Manchester metropolitan university (final year)
+
+                </h2>
+                <p style="color: #2e5464;  position: absolute;  display: inline; font-size: 16px; top: 5%;
+                        left: 2%;
+                        font-size:0.8vw;
+                        font-family: 'arial'">
+                    grade: First Class
+                </p>
+
+                <h2 style="font-weight: bold;  position: absolute; display: inline; font-size: 20px; top: 3%;
+                        left: -5%;
+                        font-size:0.8vw;
+                        color: #2e5464;
+                        white-space: pre-wrap;">
+
+                    Manchester metropolitan university (second year)
+
+                </h2>
+
+                <p style="color: #2e5464; position: absolute; display: inline; font-size: 16px; top: 13%;
+                        left: 2%;
+                        font-size:0.8vw;
+                        font-family: 'arial';">
+                    grade:
+                    First Class
+                </p>
+                <h2 style="font-weight: bold;  position: absolute; display: inline; font-size: 20px; top: 12%;
+                        left: -5%;
+                        color: #2e5464;
+                        font-size:0.8vw;
+                        white-space: pre-wrap;">
+
+                    Manchester metropolitan university (first year)
+
+                </h2>
+
+                <p style="color: #2e5464;  position: absolute; display: inline; font-size: 16px; top: 22%;
+                        left: 2%;
+                        font-size:0.8vw;
+                        font-family: 'arial';">
+
+                    grade: First class.
+                </p>
+
+                <h2 style="font-weight: bold;  position:absolute; display: inline; font-size: 20px; top: 20%;
+                        left: -5%;
+                        white-space: pre-wrap;
+                        font-size:0.8vw;
+                        color: #2e5464;">
+
+                    Wath Comprehensive School, Wath-Upon-Dearne
+                </h2>
+
+                <h2 style="left: -5%" class="keySkills">
+                    KEY SKILLS & QUALITIES
+                </h2>
+
+                <p style="color: #2e5464; font-weight: bold;  position: absolute; display: inline; font-size: 15px; top: 28%;
+                       left: -4.5%;
+                       font-size:0.8vw;
+                       white-space: pre-wrap;
+                       font-family: 'arial';">
+                    2010-2012
+                    As, A –Level and BTEC
+                    Grades
+                    – computer engineering - Distinction, ICT and
+                    Business -Distinction, Art – Distinction*
+                    2005-2010
+                    GCSE -English C, Science, C, RE, B, Computing, C
+
+
+                    •	Excellent communication skills with the ability to build rapport with people of all ages.
+                    •	Excellent analytical skills and good at problem solving which allows me to work independently with confidence
+                    to complete a given task.
+                    •	Outstanding general ICT skills.
+                    •	Good customer service skills with an understanding of what makes a high quality experience for service users.
+                    •	Good team working skills and an ability to detect strengths of others and provide support where necessary.
+                    •	Polite and cooperative nature with and enthusiastic and willing approach in the work environment.
+                    •	Familiar with both backend and front end concepts, deep learning (using Pytorch), .NET, RESTful web applications,
+                    SQL databases and React-native
+                    •	A decent understanding of bash and PowerShell
+                    •	A basic understanding of scrum, and agile software development.
+                    •	Able to program to decent standard in Python, C#, Java, JavaScript, SQL, CSS and HTML
+                </p>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section id="ArtSec" class="Art right">
+        <h1 class="mb-5 display-4 BlogTittle text-justify" style="color: #2e5464;">ART</h1>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#close').click(function () {
+
+                    document.getElementById("myModal").style.display = "none";
+                })
+
+                $('#ArtContainer1').click(function () {
+                    console.log("clicked")
+
+                    img = $('#ArtContainer1').find('img')
+                    img.click(function () {
+                        document.getElementById("myModal").style.display = "block";
+                        document.getElementById("img01").src = "@Url.Content("~/Content/catBig.png")";
+                    })
+                })
+
+                $('#ArtContainer2').click(function () {
+                    console.log("clicked")
+
+                    img = $('#ArtContainer2').find('img')
+                    img.click(function () {
+                        document.getElementById("myModal").style.display = "block";
+                        document.getElementById("img01").src = "@Url.Content("~/Content/dumbedorebig.png")";
+                    })
+                })
+
+                 $('#ArtContainer3').click(function () {
+                    console.log("clicked")
+
+                    img = $('#ArtContainer3').find('img')
+                    img.click(function () {
+                        document.getElementById("myModal").style.display = "block";
+                        document.getElementById("img01").src = "@Url.Content("~/Content/man.JPG")";
+                    })
+                })
+
+                 $('#ArtContainer4').click(function () {
+                    console.log("clicked")
+
+                    img = $('#ArtContainer4').find('img')
+                    img.click(function () {
+                        document.getElementById("myModal").style.display = "block";
+                        document.getElementById("img01").src = "@Url.Content("~/Content/lake.jpg")";
+                    })
+                })
+
+            })
+        </script>
+
+        <div id="myModal" class="modal">
+            <span id="close" class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
+        </div>
+
+
+        <span id="ArtContainer1" class=" row ArtContent1" style="left: 18.8%">
+            <img style="max-width: 95%; height: auto; top: 10px" id="ArtImage1" class="artImage1" width="460" height="460" src="@Url.Content("~/Content/cat.JPG")" />
+        </span>
+
+        <div id="ArtContainer2" class="row ArtContent1" style="cursor: pointer; left: 44.8%;">
+            <img style="max-width: 95%; height: auto; top: 10px;" id="ArtImage1" class="artImage2" width="460" height="460" src="@Url.Content("~/Content/doubledore.JPG")" />
+        </div>
+
+        <div id="ArtContainer3" class="row ArtContent1" style="left: 70.8%; cursor: pointer;">
+            <img style="max-width: 95%; height: auto; top: 10px;" id="ArtImage1" class="artImage3" width=460 height=460 src="@Url.Content("~/Content/man.JPG")" />
+        </div>
+
+        <div id="ArtContainer4" class="row ArtContent2" style="cursor: pointer;">
+            <img style="max-width: 95%; height: auto; top:10px" id="ArtImage1" class="artImage4" src="@Url.Content("~/Content/lake.jpg")" />
+        </div>
+
+    </section>
+
+    <section id="ContactmeSecontion" class="ContactMeSec right">
+        <h1 class="mb-5 display-4 BlogTittle text-justify" style="color: #2e5464;">Contact</h1>
+        <!--<div class="row contactMeContent" style="left: 20.8%">-->
+            <form class="form-horizontal" action="/Email/sendemail">
+                <fieldset>
+                    <!-- FromName, FromEmail, Message-->
+                    <!-- Text input-->
+                    <input style="position: absolute; left: 19.7%; width: 30%; height: 3%;" 
+                        id="textinput" name="FromName" type="text" class="form-control input-md" placeholder="your name" />
+    
+                    <!-- Textarea -->
+                     
+                    <input style="position: absolute; left: 50%; width: 35%; height: 3%" 
+                           id="textinput" name="FromEmail" type="text" class="form-control input-md" placeholder="your email" />
+
+                    <!-- Textarea message-->
+                    <textarea style="width: 65%; height: 30%; position: absolute; left: 19.7%; top: 9%;"
+                              class="form-control" id="textarea1" placeholder="your message" name="Message"></textarea>
+
+                    <!-- Button -->
+                    <div class="form-group" style="position: absolute; left: 80%; top: 40%;">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <button>send</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        <!--</div>-->
+    </section>
+
+
+
+    what are you looking for ;)
+
+</body>
+</html>

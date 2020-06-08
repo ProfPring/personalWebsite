@@ -1,0 +1,57 @@
+﻿<!doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Sams website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/Scripts/JavaScript.js"></script>
+    <Link rel="stylesheet" type="text/css" href="/Content/Site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <!--<h1 class="mb-5 display-4 BlogTittle text-justify" style="color: #2e5464;">Contact me</h1>-->
+    <!--<span type="button" onclick="location.href='@Url.Action("sendemail", "email")'" id="downloadbutton" style="cursor: pointer; font-size: 100px" >send</span>-->
+    <form class="form-horizontal" action="/Email/sendemail">
+        <fieldset>
+            <!-- FromName, FromEmail, Message-->
+            <!-- Form Name -->
+            <legend>new message</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">your name</label>
+                <div class="col-md-4">
+                    <input id="textinput" name="FromName" type="text" class="form-control input-md" required="" />
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">your email</label>
+                <div class="col-md-4">
+                    <input id="textinput" name="FromEmail" type="text" class="form-control input-md" required="" />
+                </div>
+            </div>
+            <!-- Textarea -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textarea">message</label>
+                <div class="col-md-4">
+                    <textarea class="form-control" id="textarea1" name="Message"></textarea>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton"></label>
+                <div class="col-md-4">
+                    <button>send</button>
+                </div>
+            </div>
+        </fieldset>
+        </form>
+
+</body>
+</html>

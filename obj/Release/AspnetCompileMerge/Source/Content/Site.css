@@ -1,0 +1,493 @@
+﻿/*@mixin section-padding {
+    padding: 10vh 0;
+
+    @media (min-width: 768px) { // I'd prefer this to be the $md Bootstrap grid variable
+        padding: 20vh 0;
+    }
+}
+.body {
+    background: linear-gradient(to right, $secondary, $accent);
+}*/
+.body {
+  /*background: linear-gradient(to right, #EECDA3, #EF629F);*/
+  height: 90%;
+  /*background-image: url("Web_Concept_BG.png");*/
+  background: #bccbce;
+  font-family: 'tenby-five'; 
+
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+
+}
+
+.active {
+  padding-left: 10%;
+  transition: 0.5s; 
+
+}
+
+.open {
+  font-size: 0; 
+
+}
+
+.open span {
+  font-size: 0;
+  display: none; 
+
+}
+
+.HomeClosed {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  left: 20%;
+  top: 230px; 
+
+}
+
+.BlogClosed {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  left: 20%;
+  top: 320px; 
+
+}
+
+.CVClosed {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  left: 20%;
+  top: 410px; 
+
+}
+
+.ArtClosed {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  left: 20%;
+  top: 500px; 
+
+}
+
+.ContactClosed {
+  position: absolute;
+  color: white;
+  font-size: 150%;
+  left: 20%;
+  top: 590px; 
+
+}
+
+.navbar-btn {
+  position: relative;
+  left: 30%;
+  top: -40px;
+  font-size: 250%;
+  color: white; 
+
+}
+
+.navbar-btn-hide {
+  display: none;
+  font-size: 0; 
+
+}
+
+.NameText {
+  position: relative;
+  padding-top: 10%;
+  left: -1%;
+  color: white;
+  font-size: 400%;
+
+}
+
+.NameText {
+  padding-left: 30%;
+  color: white;
+  font-size: 400%;
+
+}
+
+.textBlockTwo {
+  position: relative;
+  left: 30%;
+  top: 36%;
+  color: white;
+  font-size: 200%; 
+
+}
+
+#LapTop {
+  position: relative;
+  top: -300px;
+  padding-left: 70%; 
+
+}
+
+#server {
+  position: relative;
+  top: -100px;
+  left: 71%; 
+
+}
+
+.Blog {
+  background: #bccbce;
+  width: 100%;
+  height: 100%;
+  top: 90%;
+  position: absolute;
+  font-family: 'tenby-five';
+
+}
+
+.ArtExpanded {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+
+.ArtHidden{
+    display: none;
+}
+.Art {
+    background: #bccbce;
+    width: 100%;
+    height: 200%;
+    top: 290%;
+    position: absolute;
+    font-family: 'tenby-five';
+}
+
+.ContactMeSec {
+    background: #bccbce;
+    width: 100%;
+    height: 200%;
+    top: 450%;
+    position: absolute;
+    font-family: 'tenby-five';
+}
+
+
+
+.artImage1 {
+    position: relative; 
+    left:2%; 
+    top:1%;
+}
+
+.ArtContent1 :hover {
+    opacity: 0.7;
+}
+
+#ArtContainer1 {
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/*.keySkills {
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    top: 49.5%;
+    left: -5%;
+    color: #2e5464;
+    font-size: 0.8vw;
+    white-space: pre-wrap;
+}*/
+
+
+@media only screen and (min-width: 600px) {
+    .keySkills {
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        top: 40.5%;
+        left: -7%;
+        color: #2e5464;
+        font-size: 0.8vw;
+        white-space: pre-wrap;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    .keySkills {
+        font-weight: bold;
+        position: absolute;
+        display: flex;
+        top: 47.5%;
+        left: -7%;
+        color: #2e5464;
+        font-size: 0.8vw;
+        white-space: pre-wrap;
+    }
+}
+
+
+    .BlogContent p {
+        color: #2e5464;
+        position: absolute;
+        display: inline;
+        font-size: 10px;
+        top: 8%;
+        left: 10%;
+    }
+
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: white;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+
+
+    .artImage2 {
+        position: relative;
+        left: 2%;
+        top: 1%;
+    }
+
+
+    .artImage3 {
+        position: relative;
+        left: 2%;
+        top: 1%;
+    }
+
+
+    .artImage4 {
+        position: relative;
+        left: 2.5%;
+        top: 3%;
+    }
+
+
+.contactMeContent {
+    position: absolute;
+    height: 40%;
+    width: 70%;
+    left: 20%;
+    background-color: white;
+}
+
+
+
+    .BlogContent {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        left: 20%;
+        background-color: white;
+    }
+
+    .ArtContent1 {
+        position: absolute;
+        width: 25%;
+        height: 40%;
+        left: 20%;
+        background-color: white;
+    }
+
+    .ArtContent2 {
+        position: absolute;
+        width: 51%;
+        height: 30%;
+        left: 18.7%;
+        top: 46%;
+        background-color: white;
+    }
+
+
+
+    .Blog p {
+        position: relative;
+        display: inline;
+        font-size: 20px;
+        top: 20%;
+        left: -6%;
+        font-family: 'open sans';
+        white-space: pre-wrap;
+    }
+
+    .BlogText {
+        position: relative;
+        /*display: inline; */
+        font-size: 30px;
+        color: #2e5464;
+        left: 3%;
+        top: 20px;
+        width: 100%;
+        font-family: 'Century Gothic';
+    }
+
+    .BlogTittle {
+        position: relative;
+        background-color: white;
+        width: 20%;
+        top: 0%;
+        left: 20%;
+        font-size: 400%;
+    }
+
+    .CVTittle {
+        position: relative;
+        background-color: white;
+        width: 20%;
+        top: 0%;
+        left: 20%;
+        font-size: 400%;
+    }
+
+
+    textarea {
+        position: relative;
+        left: 30%;
+    }
+
+    .rollover {
+        position: absolute;
+        left: 55%;
+        top: 10%;
+        height: 50%;
+        width: 40%;
+    }
+
+    .CV {
+        position: absolute;
+        background: #bccbce;
+        width: 100%;
+        height: 100%;
+        top: 190%;
+        font-family: 'tenby-five';
+    }
+
+    .sidebar {
+        grid-template-columns: 100% 100% 100%;
+        grid-template-rows: 50% 50%;
+        display: grid;
+        height: 100%;
+        width: 4.5%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        color: #353535;
+        left: 0;
+        background-color: #2e5464;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        font-family: 'tenby-five';
+    }
+
+    .block a {
+        display: none;
+        transition: 0.3s;
+    }
+
+    /*ul#navigation .BlogPage a {
+    width: 100px;
+    height: 70px;
+    background-image: url("Icons_Blog.png");
+}*/
+    .sidebar-Open {
+        height: 100%;
+        width: 15%;
+        position: fixed;
+        z-index: 1;
+        background-color: #2e5464;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        font-family: 'tenby-five';
+    }
+
+        .sidebar-Open a {
+            padding: 30px 8px 8px 8px;
+            text-decoration: none;
+            font-size: 23px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        display: block;
+        cursor: pointer;
+        font-family: sans-serif;
+        color: white;
+        right: 25px;
+        font-size: 70%;
+        margin-left: 50px;
+    }
+
+    .closebtn-closed {
+        display: none;
+        font-size: 0;
+    }
+
+    .sidebar-Open ul {
+        padding-top: 60%;
+    }
+
+    .sidebar-Open a:hover {
+        color: #bccbce;
+    }
+
+    @font-face {
+        font-family: 'tenby-five';
+        src: url("tenby-five-webfont.woff2") format("woff2"), url("tenby-five-webfont.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
