@@ -1,4 +1,5 @@
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Scripts\JavaScript.js
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.dll
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\WebApplication1.pdb
@@ -39,4 +40,3 @@ C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Microsoft.AI.W
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

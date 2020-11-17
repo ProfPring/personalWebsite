@@ -36,7 +36,8 @@ C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Microsoft.AI.D
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
-C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Release\WebApplication1.csproj.CoreCompileInputs.cache
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Release\WebApplication1.dll
 C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Release\WebApplication1.pdb
+C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Sam.000\source\repos\WebApplication1\WebApplication1\bin\Scripts\JavaScript.js

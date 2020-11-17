@@ -11,8 +11,10 @@
 .body {
   /*background: linear-gradient(to right, #EECDA3, #EF629F);*/
   height: 90%;
-  /*background-image: url("Web_Concept_BG.png");*/
+  width: 100%;
+  background-image: url("Web_Concept_BG.png");
   background: #bccbce;
+  position: absolute;
   font-family: 'tenby-five'; 
 
 }
@@ -23,6 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; 
+  
 
 }
 
@@ -91,7 +94,7 @@ html, body {
 .navbar-btn {
   position: relative;
   left: 30%;
-  top: -40px;
+  top: 1%;
   font-size: 250%;
   color: white; 
 
@@ -100,6 +103,7 @@ html, body {
 .navbar-btn-hide {
   display: none;
   font-size: 0; 
+  color: #2e5464; 
 
 }
 
@@ -198,39 +202,20 @@ html, body {
 
 }
 
-/*.keySkills {
-    font-weight: bold;
-    position: absolute;
-    display: flex;
-    font-size: 20px;
-    top: 49.5%;
-    left: -5%;
+.BlogP {
     color: #2e5464;
-    font-size: 0.8vw;
-    white-space: pre-wrap;
-}*/
-
-
-@media only screen and (min-width: 600px) {
-    .keySkills {
-        font-weight: bold;
-        position: absolute;
-        display: flex;
-        top: 40.5%;
-        left: -7%;
-        color: #2e5464;
-        font-size: 0.8vw;
-        white-space: pre-wrap;
-    }
-
+    top: auto;
+    font-size: 1vw;
 }
+
+
 @media only screen and (min-width: 768px) {
     .keySkills {
         font-weight: bold;
         position: absolute;
         display: flex;
-        top: 47.5%;
-        left: -7%;
+        top: 27%;
+        left: -5%;
         color: #2e5464;
         font-size: 0.8vw;
         white-space: pre-wrap;
@@ -238,14 +223,13 @@ html, body {
 }
 
 
-    .BlogContent p {
+    /*.BlogContent p {
         color: #2e5464;
         position: absolute;
         display: inline;
-        font-size: 10px;
         top: 8%;
         left: 10%;
-    }
+    }*/
 
 
     /* The Modal (background) */
@@ -268,7 +252,6 @@ html, body {
         position: absolute;
         top: 15px;
         right: 35px;
-        color: white;
         color: white;
         font-size: 40px;
         font-weight: bold;
@@ -332,36 +315,37 @@ html, body {
 
     .ArtContent1 {
         position: absolute;
-        width: 25%;
-        height: 40%;
         left: 20%;
-        background-color: white;
+        
     }
 
     .ArtContent2 {
-        position: absolute;
+        position: relative;
         width: 51%;
         height: 30%;
-        left: 18.7%;
-        top: 46%;
-        background-color: white;
+        left: 18%;
+        top: 34%;
+     
+    }
+    .ArtContent2 :hover {
+        opacity: 0.7;
     }
 
 
 
     .Blog p {
-        position: relative;
-        display: inline;
-        font-size: 20px;
-        top: 20%;
-        left: -6%;
-        font-family: 'open sans';
-        white-space: pre-wrap;
+    
+    display: inline;
+    position: relative;
+    top: 20%;
+    right: 5%;
+    font-family: 'open sans';
+    white-space: pre-wrap;
     }
 
     .BlogText {
         position: relative;
-        /*display: inline; */
+        /*display: inline;*/
         font-size: 30px;
         color: #2e5464;
         left: 3%;
@@ -374,7 +358,7 @@ html, body {
         position: relative;
         background-color: white;
         width: 20%;
-        top: 0%;
+        /*top: 0%;*/
         left: 20%;
         font-size: 400%;
     }
@@ -383,7 +367,7 @@ html, body {
         position: relative;
         background-color: white;
         width: 20%;
-        top: 0%;
+        /*top: 0%;*/
         left: 20%;
         font-size: 400%;
     }
@@ -425,7 +409,7 @@ html, body {
         background-color: #2e5464;
         overflow-x: hidden;
         transition: 0.5s;
-        padding-top: 60px;
+        /*padding-top: 60px;*/
         font-family: 'tenby-five';
     }
 
@@ -488,6 +472,426 @@ html, body {
     @font-face {
         font-family: 'tenby-five';
         src: url("tenby-five-webfont.woff2") format("woff2"), url("tenby-five-webfont.woff") format("woff");
+             
+
         font-weight: normal;
         font-style: normal;
     }
+
+    .view {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .view img{
+        background-color: #ddd;
+        color: black;
+    }
+
+    .cloud {
+        font-size: 400%;
+        position: absolute;
+        display: inline;
+        top: 2%;
+        left: 86%;
+        color: white;
+        cursor: pointer;
+    }
+
+    .linkedInBttn {
+        font-size: 400%;
+        position: absolute;
+        display: inline;
+        top: 2%;
+        left: 81%;
+        color: white;
+        cursor: pointer;
+    }
+
+
+    .GithubBttn {
+        font-size: 400%;
+        position: absolute;
+        display: inline;
+        top: 2%;
+        left: 76%;
+        color: white;
+        cursor: pointer;
+    }
+
+    .CVText {
+    color: #2e5464;
+    font-weight: bold;
+    position: relative;
+    display: inline;
+    font-size: 1vw;
+
+    top: 22%;
+    left: 20%;
+    font-size: 0.8vw;
+    white-space: pre-wrap;
+    font-family: 'arial';
+}
+
+.MMUF {
+    font-weight: bold;  
+    position: relative; 
+    display: inline; 
+    font-size: 20px; 
+    top: -5%; 
+    left: -5%;
+    font-size: 1vw;
+    color: #2e5464;
+    white-space: pre-wrap;
+}
+
+.MMUFG {
+    color: #2e5464;
+    position: relative;
+    display: inline;
+    font-size: 1vw;
+    top: 4.6%;
+    left: -3%;
+    font-family: 'arial';
+}
+
+.MMUS {
+    font-weight: bold;
+    position: relative;
+    display: inline;
+    top: 3%;
+    left: -5%;
+    font-size: 1vw;
+    color: #2e5464;
+    white-space: pre-wrap;
+}
+
+.MMUSG {
+    color: #2e5464;
+    position: relative;
+    display: inline;
+    left: -3%;
+    font-size: 1vw;
+    font-family: 'arial';
+}
+
+.MMUFY {
+    font-weight: bold;
+    position: relative;
+    display: inline;
+    top: -5%;
+    left: -5%;
+    color: #2e5464;
+    font-size: 1vw;
+    white-space: pre-wrap;
+}
+
+.MMYFYG {
+    color: #2e5464;
+    position: relative;
+    display: inline;
+    left: -3%;
+    font-size: 1vw;
+    font-family: 'arial';
+    
+}
+
+.WCS {
+    font-weight: bold; 
+    position:relative; 
+    display: inline; 
+    
+    top: 20%; 
+    left: -5%; 
+    white-space: pre-wrap; 
+    font-size:1vw; 
+    color: #2e5464;
+}
+
+
+.ArtContentLeft1 {
+    left: 18.8%
+}
+
+.ArtContentLeft2 {
+    left: 45.8%;
+}
+
+.ArtContentLeft3 {
+    left: 70.8%;
+}
+
+.artImageRoate {
+    /*transform: rotate(11deg);*/
+}
+
+.artImageRoate2 {
+    /*transform: rotate(11deg);*/
+}
+
+.younameClass {
+    position: absolute; 
+    left: 19.7%; 
+    width: 50%; 
+    height: 3%;
+}
+
+.youemailClass {
+    position: absolute; 
+    left: 50%; 
+    width: 35%; 
+    height: 3%
+}
+
+.messageClass {
+    left: 19.7%;
+    top: 9%;
+    width: 65%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .younameClass {
+        position: absolute;
+        left: 2%;
+        width: 40%;
+        height: 3%;
+    }
+    .youemailClass {
+        position: absolute;
+        left: 45%;
+        width: 50%;
+        height: 3%
+    }
+    .messageClass {
+        left: 2.7%;
+        top: 9%;
+        width: 93%;
+    }
+
+    .Art {
+        background: #bccbce;
+        width: 100%;
+        height: 80%;
+        top: 290%;
+        position: absolute;
+        font-family: 'tenby-five';
+    }
+
+    .ContactMeSec {
+        background: #bccbce;
+        width: 100%;
+        height: 250%;
+        top: 370%;
+        position: absolute;
+        font-family: 'tenby-five';
+    }
+
+
+
+    .ArtContent1 {
+        position: relative;
+        width: 35%;
+        height: 10%;
+        left: 20%;
+        background-color: #bccbce;
+        transform: rotate(11deg);
+    }
+    .artImageRoate {
+        transform: rotate(-11deg);
+    }
+    .artImageRoate2 {
+        transform: rotate(0deg);
+    }
+
+    .ArtContentLeft1 {
+        top: 30%;
+        left: 10%
+    }
+
+    .ArtContentLeft2 {
+        left: 36.8%;
+    }
+
+    .ArtContentLeft3 {
+        left: 65.8%;
+    }
+    .ArtContent2 {
+        position: absolute;
+        width: 85%;
+        height: 25%;
+        left: 13.7%;
+        top: 50%;
+        background: #bccbce;
+        transform: rotate(-11deg);
+    }
+        
+    .CVText {
+        color: #2e5464;
+        font-weight: normal;
+        position: relative;
+        top: 20%;
+        left: -5%;
+        font-size: 2.5vw;
+        white-space: pre-wrap;
+        font-family: 'arial';
+    }
+
+    .MMUF {
+        display: none;
+    }
+
+    .MMUFG {
+        display: none;
+    }
+
+    .MMUS {
+        display:none;
+    }
+
+    .MMUSG {
+        display: none;
+    }
+
+    .MMUFY {
+        display: none;
+    }
+
+    .MMUFG {
+        display: none;
+    }
+    .WCS {
+        display:none;
+    }
+    
+    .linkedInBttn {
+        left: 70%;
+    }
+    .GithubBttn {
+
+        left: 85%;
+    }
+    
+    .cloud {
+        font-size: 0;
+    }
+
+
+    .CVTittle {
+        position: relative;
+        background-color: white;
+        width: 20%;
+        /*top: 0%;*/
+        left: 2%;
+        font-size: 400%;
+    }
+
+
+    
+    .navbar-btn {
+        position: fixed;
+        left: 2%;
+        top: -4px;
+        font-size: 250%;
+        color: white;
+    }
+
+    .sidebar-Open {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #2e5464;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        font-family: 'tenby-five';
+    }
+
+    .NameText {
+        position: relative;
+        text-align: center;
+        padding-top: 50%;
+        left: -14%;
+        color: white;
+        font-size: 350%;
+    }
+
+    #LapTop {
+       padding-top: 84%;
+       right: 42%;
+    }
+    
+    .sidebar {
+        /*overflow: hidden;*/
+        position: fixed;
+        width: 1%;
+        height: 6%;
+        width: 100%;
+    }
+
+    .HomeClosed {
+        position: absolute;
+        left: 7px;
+    }
+
+    .BlogClosed {
+        position: absolute;
+        left: 7px;
+    }
+
+    .CVClosed {
+        position: absolute;
+        left: 7px;
+    }
+
+    .ArtClosed {
+        position: absolute;
+        left: 7px;
+    }
+
+    .ContactClosed {
+        position: absolute;
+        left: 7px;
+    }
+
+    #server {
+        display: none;
+    }
+
+    .BlogContent {
+        left: 2%;
+        width: 96.5%;
+    }
+    
+    .BlogTittle {
+        position: relative;
+        background-color: white;
+        width: 49%;
+        /*top: 0%;*/
+        left: 2%;
+        font-size: 400%;
+    }
+
+    .BlogText {
+        top: 19%;
+        left: 10%;
+    }
+
+    .Blog p {
+        
+        font-size: 3.01vw;
+        top: 15%;
+        
+        left: -14%;
+        font-family: 'open sans';
+        
+    }
+
+    .rollover {
+        display: none;
+    }
+}
+

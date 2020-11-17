@@ -16,7 +16,8 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public ActionResult getCVFromServer()
+        
+        public ActionResult GetCVFromServer()
         {
             string rootpath = "~/Data/";
             string path = Server.MapPath(rootpath);

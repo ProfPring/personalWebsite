@@ -19,18 +19,18 @@ namespace WebApplication1.Controllers
         }
         //[HttpPost]
         //[ValidateAntiForgeryToken]
-        public string sendemail(string FromName, string FromEmail, string Message)
+        public string Sendemail(string FromName, string FromEmail, string Message)
         {
             
-            Debug.WriteLine("this run");
+            //Debug.WriteLine("this run");
             try
             {
                 if (ModelState.IsValid)
                 {
                     var body = "<p>Email From: {0} ({1})</p><p>Message:</p><p>{2}</p>";
                     var message = new MailMessage();
-                    message.To.Add(new MailAddress("email@live.co.uk"));  // where the message is going 
-                    message.From = new MailAddress("email@gmail.com");  // being sent from
+                    message.To.Add(new MailAddress("email"));  // where the message is going 
+                    message.From = new MailAddress("email", "name");  // being sent from
                     message.Subject = "from website";
                     message.Body = string.Format(body, FromName, FromEmail, Message);
                     message.IsBodyHtml = true;
@@ -39,16 +39,19 @@ namespace WebApplication1.Controllers
                     {
                         var credential = new NetworkCredential
                         {
-                            UserName = "email@gmail.com",
+                            UserName = "username",
                             Password = "password"
                         };
-                        smtp.EnableSsl = true;
+
+                        smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                        smtp.EnableSsl = false;
                         smtp.UseDefaultCredentials = false;
                         smtp.Credentials = credential;
-                        smtp.Host = "smtp.gmail.com";
+                        smtp.Host = "stmphost";
                         smtp.Timeout = 10000;
-                        smtp.Port = 587;
+                        smtp.Port = 80;
                         smtp.Send(message);
+
                         RedirectToAction("Index");
                         return "<h2>thank you, Your message has been sent!</h2>";
 
@@ -57,7 +60,7 @@ namespace WebApplication1.Controllers
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e);
+                //Debug.WriteLine(e);
                 return e.ToString();
 
             }
